@@ -1,0 +1,72 @@
+#nvx-switch .label-switch {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.6rem;
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+    height: 1.7rem;
+    position: relative;
+    cursor: pointer;
+    -ms-flex-item-align: center;
+    -webkit-align-self: center;
+    align-self: center;
+    input[type="checkbox"] {
+        display: none;
+    }
+    input[type="checkbox"]:checked + .checkbox {
+        background: #4cd964;
+    }
+    input[type="checkbox"]:checked + .checkbox:after {
+        transform: translateX(1.1rem);
+    }
+    .checkbox {
+        width: 2.6rem;
+        border-radius: 0.8rem;
+        box-sizing: border-box;
+        height: 1.7rem;
+        background: #e5e5e5;
+        z-index: 0;
+        margin: 0;
+        padding: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        -webkit-transition-duration: 300ms;
+        transition-duration: 300ms;
+        &:before {
+            content: ' ';
+            position: absolute;
+            left: 0.1rem;
+            top: 0.1rem;
+            width: 2.4rem;
+            border-radius: 0.8rem;
+            box-sizing: border-box;
+            height: 1.4rem;
+            z-index: 1;
+            -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        &:after {
+            content: ' ';
+            height: 1.4rem;
+            width: 1.4rem;
+            border-radius: 1.4rem;
+            background: #fff;
+            position: absolute;
+            z-index: 2;
+            top: 0.1rem;
+            left: 0.1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+        }
+    }
+}

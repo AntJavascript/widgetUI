@@ -1,0 +1,93 @@
+.wt-calendar {
+    overflow: hidden;
+    .date {
+        color: #333;
+        float: left;
+        width: 100%;
+        .calendar-content{
+            background: #fff;
+            .year-month {
+                &.showBtn {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0 0.3rem;
+                }
+                .month {
+                    font-size: 0.7rem;
+                    text-align: center;
+                    // width: 100%;
+                    // border-bottom: 1px solid gainsboro;
+                    line-height: 2.2rem;
+                    display: flex;
+                    justify-content: center;
+                    i {
+                        cursor:pointer;
+                        width: 2.2rem;
+                        height: 2.2rem;
+                        display: block;
+                        line-height: 2.2rem;
+                    }
+                }
+            }
+            .weekdays {
+                opacity: 0.6;
+                display: flex;
+                font-size: 0.7rem;
+                border-bottom: 1px solid #eee;
+                background: #eee;
+                li{
+                    flex: 1;
+                    font-size: 0.7rem;
+                    width:2.7rem;
+                    list-style-type:none;
+                    text-align: center;
+                    line-height:  2rem;
+                    cursor:pointer;
+                }
+            }
+            .bodyDiv{
+                // border-bottom: 1px solid gainsboro;
+                .days {
+                    display: flex;
+                    li {
+                        flex: 1;
+                        font-size: 0.7rem;
+                        list-style-type:none;
+                        text-align: center;
+                        line-height:  2rem;
+                        cursor:pointer;
+                        .dateItem{
+                            position: relative;
+                            justify-content: center;
+                            align-items: center;
+                            &.other {
+                                color: #e2e0e0;
+                            }
+                            &.disabled {
+                                background: #e2e0e0;
+                                color:#999;
+                            }
+                            &.currentDay {
+                                background: #f6f6f6;
+                                // border-radius: 2rem;
+                                // // display: inline-block;
+                                // width: 2rem;
+                                // height: 2rem;
+                            }
+                            &.selected {
+                                // display: inline-block;
+                                // width: 2rem;
+                                height: 2rem;
+                                color: #fff;
+                                background-color: #1BB5F1;
+                                // border-radius: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+  
