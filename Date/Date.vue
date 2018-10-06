@@ -55,7 +55,7 @@ export default {
       self.curTime = self.currentTime(section[0]);
       if (self.yearValue === self.begunYear) {
         // 指定月份，小于指定区间月份则不显示
-        for (let i = self.begunMonth; i <= 12; i++) {
+        for (let i = self.begunMonth; i <= self.endMonth; i++) {
           self.monthData.push(i);
         }
         var maxDay = self.getMaxDay(self.yearValue, self.begunMonth);
