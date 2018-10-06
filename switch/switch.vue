@@ -1,5 +1,5 @@
 <template>
-    <div id="wt-switch">
+    <div class="wt-switch">
       <label class="label-switch">
         <input type="checkbox" :disabled="isable" @click="Switch" :checked="checked">
         <div class="checkbox"></div>
